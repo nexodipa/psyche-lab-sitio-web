@@ -757,3 +757,49 @@ Object.entries(contentUpdateTranslations).forEach(([language, entries]) => {
     ...entries,
   };
 });
+
+const professionalServiceTranslations = {
+  en: {
+    "Profesionales": "Professionals",
+    "Servicios para personas, estudiantes y profesionales de la psicologia.": "Services for individuals, students and psychology professionals.",
+    "Psyche Lab combina psicoeducacion, estructura profesional y produccion de materiales: sesiones, informes orientativos, revision de documentos, plantillas, diapositivas y apoyo academico.": "Psyche Lab combines psychoeducation, professional structure and material production: sessions, guidance reports, document review, templates, slides and academic support.",
+    "Servicios profesionales y academicos": "Professional and academic services",
+    "Apoyo concreto para estudiar, documentar, presentar y ordenar material psicologico.": "Concrete support to study, document, present and organize psychological material.",
+    "Revision de informes psicologicos": "Psychological report review",
+    "Revision y orden de test": "Test review and organization",
+    "Apoyo academico y casos practicos": "Academic support and practical cases",
+    "Documentos editables y protocolos": "Editable documents and protocols",
+    "Muestras descargables": "Downloadable samples",
+    "Ejemplos para ver el tipo de entrega antes de contratar.": "Examples to see the type of delivery before hiring.",
+    "Ver informe muestra": "View sample report",
+    "Ver revision de test": "View test review",
+    "Revision de Informes y Test": "Report and Test Review",
+    "Revision de informe psicologico": "Psychological report review",
+    "Revision y organizacion de test": "Test review and organization",
+    "Plantillas o protocolos profesionales": "Professional templates or protocols",
+    "Diapositivas academicas": "Academic slides",
+    "Documento comentado": "Commented document",
+    "Plantilla editable": "Editable template",
+    "Revisan informes, test o documentos psicologicos?": "Do you review reports, tests or psychological documents?",
+    "Si. Se puede revisar estructura, redaccion, coherencia, tablas, claridad de resultados y formato de devolucion. La aplicacion, interpretacion final, firma y responsabilidad profesional pertenecen al psicologo o institucion correspondiente.": "Yes. Structure, writing, coherence, tables, clarity of results and feedback format can be reviewed. Application, final interpretation, signature and professional responsibility belong to the corresponding psychologist or institution.",
+    "No se firman informes por terceros, no se inventan resultados y no se aplican pruebas restringidas sin autorizacion profesional.": "Reports are not signed for third parties, results are not invented and restricted tests are not applied without professional authorization.",
+    "Describe brevemente lo que necesitas: informe, test, decision, vinculo, habito, estudio, exposicion, plantilla, etc.": "Briefly describe what you need: report, test, decision, relationship, habit, study, presentation, template, etc.",
+  },
+  de: { "Profesionales": "Fachleute", "Servicios profesionales y academicos": "Berufliche und akademische Leistungen", "Muestras descargables": "Beispiele zum Download" },
+  fr: { "Profesionales": "Professionnels", "Servicios profesionales y academicos": "Services professionnels et academiques", "Muestras descargables": "Exemples telechargeables" },
+  pt: { "Profesionales": "Profissionais", "Servicios profesionales y academicos": "Servicos profissionais e academicos", "Muestras descargables": "Amostras para baixar" },
+  it: { "Profesionales": "Professionisti", "Servicios profesionales y academicos": "Servizi professionali e accademici", "Muestras descargables": "Esempi scaricabili" },
+  ru: { "Profesionales": "Professionals", "Servicios profesionales y academicos": "Professional and academic services", "Muestras descargables": "Downloadable samples" },
+  cs: { "Profesionales": "Profesionalove", "Servicios profesionales y academicos": "Profesionalni a akademicke sluzby", "Muestras descargables": "Stazitelne ukazky" },
+  zh: { "Profesionales": "Professionals", "Servicios profesionales y academicos": "Professional and academic services", "Muestras descargables": "Downloadable samples" },
+  ja: { "Profesionales": "Professionals", "Servicios profesionales y academicos": "Professional and academic services", "Muestras descargables": "Downloadable samples" },
+  he: { "Profesionales": "Professionals", "Servicios profesionales y academicos": "Professional and academic services", "Muestras descargables": "Downloadable samples" },
+  ar: { "Profesionales": "Professionals", "Servicios profesionales y academicos": "Professional and academic services", "Muestras descargables": "Downloadable samples" },
+};
+
+Object.entries(professionalServiceTranslations).forEach(([language, entries]) => {
+  window.PSYCHE_TRANSLATIONS[language] = {
+    ...(window.PSYCHE_TRANSLATIONS[language] || {}),
+    ...entries,
+  };
+});
