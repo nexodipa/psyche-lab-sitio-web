@@ -18,7 +18,7 @@ const collectTextNodes = (root = document.body) => {
   const walker = document.createTreeWalker(root, nodeFilter.SHOW_TEXT, {
     acceptNode(node) {
       if (!node.textContent.trim()) return nodeFilter.FILTER_REJECT;
-      if (excludedTags.has(node.parentElement?.tagName)) return nodeFilter.FILTER_REJECT;
+      if (excludedTags.has(node.parentElement?.tagName) || node.parentElement?.closest('[translate="no"], [aria-hidden="true"]')) return nodeFilter.FILTER_REJECT;
       return nodeFilter.FILTER_ACCEPT;
     },
   });
