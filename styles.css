@@ -47,6 +47,11 @@ input, select, textarea {
   min-width: 0;
 }
 
+.language-switcher, .language-switcher label {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
 html[dir="rtl"] body {
   text-align: right;
 }
@@ -303,7 +308,7 @@ p {
 
 .hero {
   position: relative;
-  min-height: calc(100vh - 76px);
+  min-height: calc(100svh - 150px);
   overflow: hidden;
   padding: 82px 7vw 70px;
   display: grid;
@@ -1425,7 +1430,7 @@ textarea {
   }
 
   .hero {
-    min-height: calc(100vh - 68px);
+    min-height: calc(100svh - 140px);
     padding: 58px 20px 54px;
   }
 
