@@ -13,13 +13,18 @@ const { chromium } = require('playwright');
   assert.ok(!source.includes('<span>Foto</span>'));
   assert.ok(!source.includes('No como promesa principal'));
   assert.ok(!source.includes('Agendar una sesion'));
+  for (const removed of ['Orientacion psiquiatrica', 'Informe de Apego Aplicado', 'Revision de informes psicologicos', 'Revision y orden de test']) {
+    assert.ok(!source.includes(removed), removed);
+  }
   const browser = await chromium.launch({ channel: 'msedge', headless: true });
   try {
     const page = await browser.newPage();
     const errors = [];
     page.on('pageerror', e => errors.push(e.message));
     for (const lang of ['es','en','de','fr','pt','it','ru','cs','zh','ja','he','ar']) {
-      await page.goto(pathToFileURL(path.join(root, 'index.html')).href + '?lang=' + lang);
+      const target = new URL(process.env.PSYCHE_TEST_URL || pathToFileURL(path.join(root, 'index.html')).href);
+      target.searchParams.set('lang', lang);
+      await page.goto(target.href);
       assert.equal(await page.locator('html').getAttribute('lang'), lang);
       assert.equal(await page.locator('html').getAttribute('dir'), ['he', 'ar'].includes(lang) ? 'rtl' : 'ltr');
       assert.equal(await page.locator('[name="service"] option').count(), 4);
