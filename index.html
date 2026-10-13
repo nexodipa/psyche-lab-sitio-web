@@ -1,782 +1,103 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Psyche Lab | Psicologia aplicada y salud mental</title>
-    <meta
-      name="description"
-      content="Psyche Lab ofrece psicologia aplicada, psicoeducacion, claridad psicologica, orientacion en salud mental, apego, habitos y recursos digitales."
-    />
-    <meta property="og:title" content="Psyche Lab | Psicologia aplicada y salud mental" />
-    <meta property="og:description" content="Psicoeducacion profunda, orientacion en salud mental, mapas psicologicos, apego, habitos y claridad estrategica." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/hero-psyche-lab-medical-v2.png" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#inicio" aria-label="Psyche Lab inicio">
-        <span class="brand-mark">PL</span>
-        <span>
-          <strong>Psyche Lab</strong>
-          <small>Psicologia aplicada</small>
-        </span>
-      </a>
-      <button class="menu-button" id="menu-button" type="button" aria-label="Abrir menu">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="language-switcher" aria-label="Selector de idioma">
-        <label for="language-select">Idioma</label>
-        <select id="language-select" name="language">
-          <option value="es">ES</option>
-          <option value="en">EN</option>
-          <option value="de">DE</option>
-          <option value="fr">FR</option>
-          <option value="pt">PT</option>
-          <option value="it">IT</option>
-          <option value="ru">RU</option>
-          <option value="cs">CS</option>
-          <option value="zh">ZH</option>
-          <option value="ja">JA</option>
-          <option value="he">HE</option>
-          <option value="ar">AR</option>
-        </select>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Psyche Lab | Recursos educativos</title>
+  <meta name="description" content="Recursos educativos para comprender conceptos de psicología, organizar el estudio y explorar hábitos. No ofrecemos diagnóstico ni psicoterapia." />
+  <meta property="og:title" content="Psyche Lab | Recursos educativos" />
+  <meta property="og:description" content="Recursos educativos para comprender conceptos de psicología, organizar el estudio y explorar hábitos. No ofrecemos diagnóstico ni psicoterapia." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://nexodipa.github.io/psyche-lab-sitio-web/assets/articulos-psyche-lab.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Psyche Lab inicio"><span class="brand-mark">PL</span><span><strong translate="no">Psyche Lab</strong><small>Recursos educativos</small></span></a>
+    <button class="menu-button" id="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+    <div class="language-switcher" aria-label="Selector de idioma">
+      <label for="language-select">Idioma</label>
+      <select id="language-select" name="language" translate="no">
+        <option value="es">ES</option><option value="en">EN</option><option value="de">DE</option><option value="fr">FR</option>
+        <option value="pt">PT</option><option value="it">IT</option><option value="ru">RU</option><option value="cs">CS</option>
+        <option value="zh">ZH</option><option value="ja">JA</option><option value="he">HE</option><option value="ar">AR</option>
+      </select>
+    </div>
+    <nav class="site-nav" id="site-nav" aria-label="Navegacion principal">
+      <a href="#sobre-mi">Quien soy</a><a href="#servicios">Servicios</a><a href="#recursos">Recursos educativos</a><a href="#faq">FAQ</a><a class="nav-cta" href="#contacto">Solicitar info</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <img class="hero-image" src="assets/articulos-psyche-lab.png" alt="Ilustración editorial de libros y materiales de estudio; no representa instalaciones propias." />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Recursos educativos</p><h1 translate="no">Psyche Lab</h1>
+        <p class="hero-lead">Recursos educativos para comprender conceptos de psicología, organizar el estudio y explorar hábitos. No ofrecemos diagnóstico ni psicoterapia.</p>
+        <div class="hero-actions"><a class="primary-button" href="#contacto">Solicitar info</a><a class="secondary-button" href="#servicios">Servicios</a></div>
+        <div class="trust-row"><span>Estudiantes</span><span>Lenguaje claro</span><span>Habitos</span></div>
       </div>
-      <nav class="site-nav" id="site-nav" aria-label="Navegacion principal">
-        <a href="#sobre-mi">Quien soy</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#profesionales">Profesionales</a>
-        <a href="#salud-mental">Salud mental</a>
-        <a href="#tarifas">Tarifas</a>
-        <a href="#articulos">Temas frecuentes</a>
-        <a href="#diapositivas">Diapositivas</a>
-        <a href="#programas">Programas</a>
-        <a href="#faq">FAQ</a>
-        <a class="nav-cta" href="#contacto">Solicitar info</a>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero" id="inicio">
-        <img class="hero-image" src="assets/hero-psyche-lab-medical-v2.png" alt="Laboratorio moderno de psicologia, salud mental y evaluacion neuropsicologica" />
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <p class="eyebrow">Psicoeducacion - Salud mental - Vinculos - Decision</p>
-          <h1>Psyche Lab</h1>
-          <p class="hero-lead">
-            Recursos educativos para comprender conceptos de psicología, organizar el estudio y explorar hábitos. No ofrecemos diagnóstico ni psicoterapia.
-          </p>
-          <div class="hero-actions">
-            <a class="primary-button" href="#contacto">Solicitar info</a>
-            <a class="secondary-button" href="#articulos">Temas frecuentes</a>
-          </div>
-          <div class="trust-row" aria-label="Areas de Psyche Lab">
-            <span>Claridad psicologica</span>
-            <span>Salud mental</span>
-            <span>Vinculo y apego</span>
-            <span>Estructura interna</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="notice-strip" aria-label="Aviso profesional">
-        <strong>Nota profesional:</strong>
-        <span>Psyche Lab ofrece psicoeducacion, claridad estrategica y recursos de autoconocimiento. No reemplaza atencion de emergencia, diagnostico clinico ni psicoterapia formal.</span>
-      </section>
-
-      <section class="statement-section">
-        <div>
-          <p class="eyebrow">Enfoque</p>
-          <h2>Un laboratorio de comprension personal, no una clinica online generica.</h2>
-        </div>
-          <p>
-            Psyche Lab analiza conducta, vinculos, narrativas personales, toma de decisiones
-            organizacion cotidiana y senales de salud mental desde una base psicoeducativa
-            solida. No promete diagnosticos ni terapia clinica remota: entrega claridad,
-            mapas, recursos y acompanamiento estructurado para pensar mejor la propia vida
-            y saber cuando conviene buscar atencion especializada.
-          </p>
-      </section>
-
-      <section class="section authority-section">
-        <div class="authority-media">
-          <img src="assets/consulta-psyche-lab.png" alt="Espacio profesional de consulta psicologica y psicoeducacion" />
-        </div>
-        <div class="authority-copy">
-          <p class="eyebrow">Enfoque profesional</p>
-          <h2>Claridad, metodo y cuidado en el lenguaje.</h2>
-          <p>
-            La pagina esta disenada como un espacio profesional de psicologia aplicada:
-            explica fenomenos psicologicos, organiza preguntas personales, diferencia
-            orientacion de diagnostico y ofrece herramientas para pensar con mas precision.
-            La idea no es etiquetar a la persona, sino ayudarle a construir un mapa util
-            de lo que vive y reconocer el siguiente nivel de cuidado.
-          </p>
-          <div class="credential-grid">
-            <article><strong>Base psicologica</strong><span>Conducta, apego, emocion, habitos, sintomas y toma de decisiones.</span></article>
-            <article><strong>Lenguaje claro</strong><span>Conceptos complejos traducidos a criterios, preguntas y acciones.</span></article>
-            <article><strong>Alcance cuidado</strong><span>Psicoeducacion e informes orientativos, no diagnostico, medicacion ni terapia de crisis.</span></article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section about-section" id="sobre-mi">
-        <div class="about-media">
-          <div class="about-photo-placeholder" aria-hidden="true">
-            <span>PL</span>
-          </div>
-        </div>
-        <div class="about-copy">
-          <p class="eyebrow">Quien esta detras</p>
-          <h2 translate="no">Edwin Josué Puglla Gangotena</h2>
-          <p>Responsable de Psyche Lab. Recursos educativos y organización de contenidos; este sitio no ofrece diagnóstico ni psicoterapia.</p>
-          <p>
-            Psyche Lab nace de querer ofrecer psicologia de calidad fuera del
-            formato clinico tradicional: accesible, clara y orientada a personas
-            que piensan con cuidado su propia experiencia.
-          </p>
-          <div class="about-credentials">
-            <article>
-              <strong>Alcance cuidado</strong>
-              <span>Psicoeducacion e informes orientativos, no diagnostico, medicacion ni terapia de crisis.</span>
-            </article>
-            <article>
-              <strong>Enfoque</strong>
-              <span>Psicoeducativo, orientativo y aplicado</span>
-            </article>
-            <article>
-              <strong>Modalidad</strong>
-              <span>Online — sesiones, informes y programas</span>
-            </article>
-          </div>
-          <a class="primary-button" href="#contacto" style="margin-top:8px;max-width:260px;">Solicitar info</a>
-        </div>
-      </section>
-
-      <section class="section lines-section" id="lineas">
-        <div class="section-heading">
-          <p class="eyebrow">Areas de trabajo</p>
-          <h2>Tres lineas de especialidad con un hilo comun: claridad aplicada.</h2>
-          <p>
-            Cada area aborda una dimension distinta de la experiencia personal:
-            los vinculos, la conducta y la toma de decisiones. Puedes trabajar
-            una sola o combinarlas segun lo que necesitas ordenar.
-          </p>
-        </div>
-        <div class="line-grid">
-          <article>
-            <span>01</span>
-            <h3>Claridad Psicologica</h3>
-            <p>Sesiones e informes para ordenar problemas, detectar patrones, separar hechos de interpretaciones y convertir confusion en proximos pasos.</p>
-            <strong>Ideal para decisiones, bloqueo mental y narrativa personal.</strong>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Vinculo & Apego</h3>
-            <p>Analisis psicoeducativo de patrones relacionales, estilos de apego, dinamicas repetidas, limites, dependencia emocional y eleccion de pareja.</p>
-            <strong>Ideal para relaciones, duelos afectivos y patrones repetitivos.</strong>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Estructura Interna</h3>
-            <p>Organizacion conductual, habitos, rutinas, energia mental, estudio, disciplina flexible y sistemas personales para sostener cambios.</p>
-            <strong>Ideal para habitos, estudio, productividad y estabilidad cotidiana.</strong>
-          </article>
-        </div>
-      </section>
-
-      <section class="section services-section" id="servicios">
-        <div class="section-heading centered">
-          <p class="eyebrow">Servicios</p>
-          <h2>Servicios para personas, estudiantes y profesionales de la psicologia.</h2>
-          <p>
-            Psyche Lab combina psicoeducacion, estructura profesional y produccion
-            de materiales: sesiones, informes orientativos, revision de documentos,
-            plantillas, diapositivas y apoyo academico.
-          </p>
-        </div>
-        <div class="services-grid">
-          <article>
-            <span>Sesion 1:1</span>
-            <h3>Sesion de Claridad Psicologica</h3>
-            <p>Una conversacion estructurada para entender un problema, ordenar variables, identificar patrones y definir acciones concretas.</p>
-            <strong>Desde 45-60 min</strong>
-          </article>
-          <article>
-            <span>Informe</span>
-            <h3>Mapa de Patrones Relacionales</h3>
-            <p>Informe personalizado sobre formas de vincularse, necesidades afectivas, respuestas defensivas y puntos de ajuste.</p>
-            <strong>Entrega en PDF</strong>
-          </article>
-          <article>
-            <span>Apego</span>
-            <h3>Informe de Apego Aplicado</h3>
-            <p>Lectura psicoeducativa del estilo de apego, detonantes, mecanismos de seguridad y recomendaciones practicas.</p>
-            <strong>Personalizado</strong>
-          </article>
-          <article>
-            <span>Habitos</span>
-            <h3>Plan de Estructura Interna</h3>
-            <p>Sistema semanal para ordenar horarios, energia, estudio, sueno, autocuidado y seguimiento conductual.</p>
-            <strong>7, 14 o 30 dias</strong>
-          </article>
-          <article>
-            <span>Estudiantes</span>
-            <h3>Tutorias y Guias de Psicologia</h3>
-            <p>Explicacion de autores, teorias, psicopatologia, evaluacion, entrevista, casos y preparacion de exposiciones.</p>
-            <strong>PDF / diapositivas</strong>
-          </article>
-          <article>
-            <span>Profesionales</span>
-            <h3>Revision de Informes y Test</h3>
-            <p>Revision de estructura, redaccion, coherencia, presentacion de resultados y claridad de devolucion.</p>
-            <strong>Documento comentado</strong>
-          </article>
-        </div>
-      </section>
-
-      <section class="section professional-section" id="profesionales">
-        <div class="section-heading">
-          <p class="eyebrow">Servicios profesionales y academicos</p>
-          <h2>Apoyo concreto para estudiar, documentar, presentar y ordenar material psicologico.</h2>
-          <p>
-            Esta linea esta pensada para psicologos, estudiantes y equipos que necesitan
-            mejorar materiales sin perder criterio etico: se revisa forma, estructura,
-            claridad y coherencia; no se inventan datos, no se firman informes por terceros
-            y no se reemplaza supervision clinica cuando corresponde.
-          </p>
-        </div>
-
-        <div class="professional-layout">
-          <article class="professional-panel">
-            <span>Para psicologos</span>
-            <h3>Revision de informes psicologicos</h3>
-            <p>Lectura de informes para mejorar orden, lenguaje, coherencia entre motivo, observaciones, resultados, conclusiones y recomendaciones.</p>
-            <ul>
-              <li>Correccion de redaccion clinica y psicoeducativa.</li>
-              <li>Organizacion de resultados de pruebas y entrevistas.</li>
-              <li>Devolucion clara para paciente, familia, institucion o equipo.</li>
-            </ul>
-          </article>
-          <article class="professional-panel">
-            <span>Evaluacion</span>
-            <h3>Revision y orden de test</h3>
-            <p>Apoyo para presentar puntajes, observaciones, hipotesis y limites de interpretacion de forma responsable.</p>
-            <ul>
-              <li>Matrices para resultados cuantitativos y cualitativos.</li>
-              <li>Checklist de consistencia entre datos y conclusiones.</li>
-              <li>Formato de informe con secciones profesionales.</li>
-            </ul>
-          </article>
-          <article class="professional-panel">
-            <span>Estudiantes</span>
-            <h3>Apoyo academico y casos practicos</h3>
-            <p>Tutorias, guias, mapas conceptuales, diapositivas y simulaciones de caso para estudiar psicologia con estructura.</p>
-            <ul>
-              <li>Preparacion de exposiciones y guiones.</li>
-              <li>Revision de ensayos, tareas y analisis de caso.</li>
-              <li>Material visual para psicopatologia, evaluacion y entrevista.</li>
-            </ul>
-          </article>
-          <article class="professional-panel">
-            <span>Plantillas</span>
-            <h3>Documentos editables y protocolos</h3>
-            <p>Creacion de fichas, consentimientos, entrevistas, hojas de seguimiento, planes de habitos y formatos de devolucion.</p>
-            <ul>
-              <li>Plantillas para consulta, estudio o psicoeducacion.</li>
-              <li>Protocolos de entrevista inicial y seguimiento.</li>
-              <li>Formatos para PDF, Word, diapositiva o Notion.</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="sample-strip">
-          <div>
-            <p class="eyebrow">Muestras descargables</p>
-            <h3>Ejemplos para ver el tipo de entrega antes de contratar.</h3>
-          </div>
-          <div class="sample-actions">
-            <a class="sample-button" href="assets/pdf/psyche-lab-muestra-informe-psicoeducativo.pdf" target="_blank" rel="noopener">Ver informe muestra</a>
-            <a class="sample-button sample-button-secondary" href="assets/pdf/psyche-lab-muestra-revision-test.pdf" target="_blank" rel="noopener">Ver revision de test</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section mental-health-section" id="salud-mental">
-        <div class="section-heading">
-          <p class="eyebrow">Salud mental y psiquiatria</p>
-          <h2>Un puente serio entre psicoeducacion, orientacion clinica y derivacion responsable.</h2>
-          <p>
-            Psyche Lab tambien aborda salud mental desde una posicion cuidadosa:
-            ayuda a entender sintomas, organizar informacion, preparar consultas
-            y reconocer cuando conviene acudir a psicologia, psiquiatria u otro
-            profesional de salud. No prescribe medicacion, no diagnostica y no
-            reemplaza atencion de emergencia.
-          </p>
-        </div>
-
-        <div class="mental-layout">
-          <article class="mental-panel mental-panel-main">
-            <span>Orientacion psiquiatrica</span>
-            <h3>Claridad antes, durante y despues de buscar ayuda profesional.</h3>
-            <p>
-              Un espacio para ordenar lo que ocurre: sintomas, duracion, sueno,
-              apetito, energia, consumo de sustancias, antecedentes, impacto en
-              la vida diaria y dudas sobre derivacion. La meta es llegar mejor
-              preparado a una consulta formal cuando sea necesaria.
-            </p>
-          </article>
-          <div class="mental-card-grid">
-            <article>
-              <span>Psicologia</span>
-              <h3>Conducta, vinculos y narrativa personal</h3>
-              <p>Comprension de patrones, emociones, habitos, apego, decisiones y organizacion cotidiana.</p>
-            </article>
-            <article>
-              <span>Psiquiatria</span>
-              <h3>Sintomas, riesgo y tratamiento medico</h3>
-              <p>Preparacion psicoeducativa para entender cuando una valoracion medica puede ser importante.</p>
-            </article>
-            <article>
-              <span>Funcion cognitiva</span>
-              <h3>Atencion, memoria y desempeno mental</h3>
-              <p>Revision orientativa de dificultades de concentracion, estudio, fatiga mental y rutinas.</p>
-            </article>
-            <article>
-              <span>Derivacion responsable</span>
-              <h3>Saber cuando escalar el cuidado</h3>
-              <p>Senales para buscar psicoterapia, psiquiatria, evaluacion neuropsicologica o ayuda urgente.</p>
-            </article>
-          </div>
-        </div>
-
-        <div class="condition-grid" aria-label="Temas de salud mental">
-          <article>
-            <strong>Ansiedad</strong>
-            <p>Preocupacion persistente, hipervigilancia, crisis de panico, evitacion y tension corporal.</p>
-          </article>
-          <article>
-            <strong>Estado de animo</strong>
-            <p>Tristeza sostenida, irritabilidad, perdida de interes, culpa, desesperanza o cambios de energia.</p>
-          </article>
-          <article>
-            <strong>Sueno e insomnio</strong>
-            <p>Dificultad para dormir, despertar frecuente, fatiga, rutina nocturna y factores conductuales.</p>
-          </article>
-          <article>
-            <strong>Trauma y estres</strong>
-            <p>Reactividad emocional, recuerdos intrusivos, evitacion, alerta constante y sensacion de amenaza.</p>
-          </article>
-          <article>
-            <strong>Atencion y TDAH</strong>
-            <p>Organizacion, impulsividad, procrastinacion, distractibilidad y estrategias para estudio o trabajo.</p>
-          </article>
-          <article>
-            <strong>Consumo de sustancias</strong>
-            <p>Registro de patrones, detonantes, consecuencias y necesidad de apoyo especializado.</p>
-          </article>
-        </div>
-
-        <div class="crisis-panel">
-          <div>
-            <p class="eyebrow">Limites de seguridad</p>
-            <h3>Senales para buscar ayuda urgente</h3>
-            <p>
-              Si hay riesgo de hacerse dano, ideas suicidas, confusion intensa,
-              desconexion de la realidad, violencia, intoxicacion, abstinencia
-              peligrosa o incapacidad para cuidarse, la prioridad es contactar
-              servicios de emergencia o acudir a un centro de salud.
-            </p>
-          </div>
-          <ul class="prep-list">
-            <li>Que sintomas aparecen y desde cuando.</li>
-            <li>Como estan sueno, apetito, energia y concentracion.</li>
-            <li>Medicacion, sustancias, antecedentes y apoyo disponible.</li>
-            <li>Que nivel de riesgo existe y que ayuda cercana se puede activar.</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section pricing-section" id="tarifas">
-        <div class="section-heading centered">
-          <p class="eyebrow">Tarifas</p>
-          <h2>Cada servicio se cotiza segun el alcance y formato elegido.</h2>
-          <p>No hay tarifas fijas publicadas porque el trabajo se adapta a cada caso. Escribe describiendo lo que necesitas y recibes una propuesta con alcance y precio claros.</p>
-        </div>
-        <div class="pricing-grid">
-          <article>
-            <div class="pricing-icon">&#9632;</div>
-            <h3>Sesion de Claridad</h3>
-            <ul class="pricing-features">
-              <li>Sesion individual online (45-60 min)</li>
-              <li>Analisis del problema presentado</li>
-              <li>Mapa de variables y patrones</li>
-              <li>Proximos pasos concretos</li>
-            </ul>
-            <a class="pricing-cta" href="#contacto">Consultar precio</a>
-          </article>
-          <article class="pricing-featured">
-            <div class="pricing-icon">&#9670;</div>
-            <h3>Informe Personalizado</h3>
-            <ul class="pricing-features">
-              <li>Informe PDF a medida</li>
-              <li>Apego, patrones o toma de decisiones</li>
-              <li>Recomendaciones practicas aplicables</li>
-              <li>Posibilidad de sesion de revision</li>
-            </ul>
-            <a class="pricing-cta pricing-cta-primary" href="#contacto">Consultar precio</a>
-          </article>
-          <article>
-            <div class="pricing-icon">&#9633;</div>
-            <h3>Programa Estructurado</h3>
-            <ul class="pricing-features">
-              <li>7, 14 o 30 dias de acompanamiento</li>
-              <li>Plan semanal con seguimiento</li>
-              <li>Recursos digitales incluidos</li>
-              <li>Ajustes segun progreso</li>
-            </ul>
-            <a class="pricing-cta" href="#contacto">Consultar precio</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section information-section" id="articulos">
-        <div class="section-heading">
-          <p class="eyebrow">Temas frecuentes</p>
-          <h2>Temas para trabajar con recursos educativos.</h2>
-          <p>
-            Psicologia aplicada escrita con rigor y lenguaje humano: vinculos, emociones,
-            conducta, habitos, decisiones y narrativa personal.
-          </p>
-        </div>
-        <div class="featured-article">
-          <img src="assets/articulos-psyche-lab.png" alt="Escritorio de lectura psicologica con libros, guias y notas" />
-          <div>
-            <div class="article-meta">
-              <span class="article-tag">Temas frecuentes</span>
-            </div>
-            <h3>Como ordenar un problema emocional sin convertirlo en identidad</h3>
-            <p>
-              Cuando una persona esta saturada, suele mezclar hechos, miedo, memoria,
-              deseos y suposiciones. Ordenar no significa negar la emocion: significa
-              darle un lugar, distinguir que ocurrio, que interpretaste, que necesitas
-              y cual es el siguiente paso razonable.
-            </p>
-            <a class="text-link" href="#contacto">Solicitar una guia personalizada</a>
-          </div>
-        </div>
-        <div class="article-grid">
-          <article>
-            <div class="article-card-meta">
-              <span>Apego</span>
-            </div>
-            <h3>Ansiedad relacional: cuando el vinculo se vuelve vigilancia</h3>
-            <p>Una lectura psicoeducativa sobre hipervigilancia, necesidad de certeza, miedo al abandono y formas de recuperar seguridad interna.</p>
-            <a href="#contacto">Pedir informe de apego &rarr;</a>
-          </article>
-          <article>
-            <div class="article-card-meta">
-              <span>Habitos</span>
-            </div>
-            <h3>Por que la disciplina falla cuando depende solo de motivacion</h3>
-            <p>Los habitos se sostienen mejor con entorno, friccion, energia, recompensas y seguimiento que con exigencia emocional constante.</p>
-            <a href="#programas">Ver programas &rarr;</a>
-          </article>
-          <article>
-            <div class="article-card-meta">
-              <span>Decision</span>
-            </div>
-            <h3>Como distinguir intuicion, miedo y evitacion</h3>
-            <p>Una decision clara requiere observar cuerpo, historia, evidencia, valores y consecuencias, no solo buscar alivio inmediato.</p>
-            <a href="#contacto">Solicitar info</a>
-          </article>
-          <article>
-            <div class="article-card-meta">
-              <span>Limites</span>
-            </div>
-            <h3>Poner limites sin convertir la relacion en una guerra</h3>
-            <p>Los limites no son castigos: son criterios de cuidado, disponibilidad y coherencia que ayudan a proteger el vinculo y la dignidad.</p>
-            <a href="#recursos">Ver recursos &rarr;</a>
-          </article>
-          <article>
-            <div class="article-card-meta">
-              <span>Estudio</span>
-            </div>
-            <h3>Estudiar psicologia sin perderse entre autores</h3>
-            <p>Una guia para organizar conceptos, teorias, procesos y aplicaciones sin memorizar de forma aislada.</p>
-            <a href="#contacto">Pedir material &rarr;</a>
-          </article>
-          <article>
-            <div class="article-card-meta">
-              <span>Narrativa</span>
-            </div>
-            <h3>La historia que te cuentas tambien organiza tu conducta</h3>
-            <p>La narrativa personal puede abrir posibilidades o repetir una vieja conclusion. Revisarla ayuda a decidir con mas libertad.</p>
-            <a href="#contacto">Trabajar narrativa &rarr;</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section method-section">
-        <div class="method-copy">
-          <p class="eyebrow">Metodo</p>
-          <h2>Comprender, nombrar, estructurar y sostener.</h2>
-          <p>
-            El valor de Psyche Lab esta en traducir psicologia compleja a mapas personales:
-            conceptos serios, preguntas precisas, lenguaje cercano y herramientas aplicables.
-          </p>
-        </div>
-        <div class="method-steps">
-          <article><span>1</span><h3>Exploracion</h3><p>Se delimita el tema y se separan hechos, emociones, interpretaciones y necesidades.</p></article>
-          <article><span>2</span><h3>Mapa psicologico</h3><p>Se organizan patrones, detonantes, defensas, habitos y narrativas que sostienen el problema.</p></article>
-          <article><span>3</span><h3>Hipotesis practica</h3><p>Se formula una lectura util sin convertirla en diagnostico ni etiqueta cerrada.</p></article>
-          <article><span>4</span><h3>Plan de accion</h3><p>Se definen pasos medibles, limites, rituales conductuales o recursos de seguimiento.</p></article>
-        </div>
-      </section>
-
-      <section class="section slide-section" id="diapositivas">
-        <div class="section-heading">
-          <p class="eyebrow">Diapositivas y mapas clinicos</p>
-          <h2>Material visual para estudiar, compartir y convertir confusion en estructura.</h2>
-          <p>
-            Psyche Lab puede convertir cada tema en guias, PDFs, audios o diapositivas:
-            piezas breves, profesionales y accionables para estudiantes, pacientes
-            psicoeducativos, creadores de contenido y personas que quieren entenderse mejor.
-          </p>
-        </div>
-        <div class="slide-deck">
-          <article class="slide-card slide-featured">
-            <span>Deck 01</span>
-            <h3>Mapa de consulta psiquiatrica</h3>
-            <p>Que observar antes de una valoracion: sintomas, duracion, sueno, apetito, energia, sustancias, riesgo, antecedentes y preguntas para el medico.</p>
-            <ul>
-              <li>Checklist previo a consulta</li>
-              <li>Linea de tiempo de sintomas</li>
-              <li>Preguntas para derivacion segura</li>
-            </ul>
-          </article>
-          <article class="slide-card">
-            <span>Deck 02</span>
-            <h3>Apego en lenguaje simple</h3>
-            <p>Estilos de apego, detonantes, estrategias defensivas, necesidades afectivas y formas de construir seguridad.</p>
-          </article>
-          <article class="slide-card">
-            <span>Deck 03</span>
-            <h3>Ansiedad: cuerpo, mente y conducta</h3>
-            <p>Como diferenciar preocupacion, evitacion, panico, vigilancia y estrategias de regulacion cotidiana.</p>
-          </article>
-          <article class="slide-card">
-            <span>Deck 04</span>
-            <h3>Habitos y salud mental</h3>
-            <p>Rutina, sueno, energia, friccion, recompensa, seguimiento y prevencion de recaidas conductuales.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section topics-section" id="temas">
-        <div class="section-heading centered">
-          <p class="eyebrow">Temas frecuentes</p>
-          <h2>La informacion que una persona busca cuando llega a una pagina de psicologia.</h2>
-        </div>
-        <div class="topic-grid">
-          <article><h3>Apego ansioso</h3><p>Necesidad intensa de certeza, miedo al abandono, dificultad para regularse ante distancia o ambiguedad.</p></article>
-          <article><h3>Apego evitativo</h3><p>Tendencia a retirarse, incomodidad con la dependencia, proteccion excesiva de la autonomia y distancia emocional.</p></article>
-          <article><h3>Dependencia emocional</h3><p>Cuando la relacion se vuelve fuente principal de identidad, calma o validacion personal.</p></article>
-          <article><h3>Autosabotaje</h3><p>Patrones que parecen proteger de fracaso o rechazo, pero terminan bloqueando accion y crecimiento.</p></article>
-          <article><h3>Ansiedad cotidiana</h3><p>Lectura educativa de preocupacion, anticipacion, control, evitacion y sobrecarga mental.</p></article>
-          <article><h3>Habitos y rutina</h3><p>Sistemas simples para sostener cambios sin depender de fuerza de voluntad infinita.</p></article>
-          <article><h3>Limites personales</h3><p>Criterios para decir si, decir no y negociar presencia sin culpa excesiva.</p></article>
-          <article><h3>Duelo afectivo</h3><p>Comprender perdida, idealizacion, abstinencia emocional y reconstruccion de identidad.</p></article>
-        </div>
-      </section>
-
-      <section class="section programs-section" id="programas">
-        <div class="section-heading">
-          <p class="eyebrow">Programas</p>
-          <h2>Acompanamiento estructurado con duracion y objetivo definidos.</h2>
-        </div>
-        <div class="program-grid">
-          <article>
-            <span>7 dias</span>
-            <h3>Reset de Claridad</h3>
-            <p>Diario guiado, ejercicios de decision, mapa de prioridades, registro emocional y cierre semanal para salir de la saturacion mental.</p>
-            <a href="#contacto">Solicitar programa</a>
-          </article>
-          <article>
-            <span>14 dias</span>
-            <h3>Apego en la Vida Real</h3>
-            <p>Guia aplicada con ejercicios para identificar patrones afectivos, ansiedad relacional, evitacion, limites y seguridad interna.</p>
-            <a href="#contacto">Solicitar programa</a>
-          </article>
-          <article>
-            <span>30 dias</span>
-            <h3>Estructura Interna</h3>
-            <p>Plan progresivo de habitos, seguimiento, energia, estudio, descanso, autocuidado y pequenas decisiones sostenibles.</p>
-            <a href="#contacto">Solicitar programa</a>
-          </article>
-          <article>
-            <span>Orientativo</span>
-            <h3>Preparar Consulta de Salud Mental</h3>
-            <p>Ordena sintomas, antecedentes, dudas, medicacion actual, sustancias, riesgos y objetivos antes de acudir a un profesional.</p>
-            <a href="#contacto">Solicitar programa</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section resources-section" id="recursos">
-        <div class="section-heading centered">
-          <p class="eyebrow">Recursos digitales</p>
-          <h2>Materiales descargables para trabajar a tu propio ritmo.</h2>
-          <p>Guias, cuadernos y plantillas disenadas para acompanar el proceso entre sesiones o como punto de partida independiente.</p>
-        </div>
-        <div class="resource-grid">
-          <article><h3>Cuaderno de narrativa personal</h3><p>Preguntas para reconstruir historia, roles, heridas, decisiones y sentido actual.</p></article>
-          <article><h3>Mapa de apego y vinculos</h3><p>Plantilla para observar patrones afectivos sin caer en etiquetas rigidas.</p></article>
-          <article><h3>Kit de habitos sostenibles</h3><p>Rastreador semanal, diseno de entorno, recompensas, friccion y revision conductual.</p></article>
-          <article><h3>Guia de sesgos cognitivos</h3><p>Material para pensar decisiones, autoengano, miedo, urgencia y costo emocional.</p></article>
-          <article><h3>Manual de limites</h3><p>Frases, criterios y ejercicios para sostener limites sin violencia ni culpa excesiva.</p></article>
-          <article><h3>Psicologia para estudiantes</h3><p>Resumenes visuales y explicativos para estudiar autores, procesos y conceptos clave.</p></article>
-        </div>
-      </section>
-
-      <section class="section faq-section" id="faq">
-        <div class="section-heading centered">
-          <p class="eyebrow">Preguntas frecuentes</p>
-          <h2>Transparencia antes de empezar.</h2>
-        </div>
-        <div class="faq-list">
-          <details open>
-            <summary>Psyche Lab ofrece terapia psicologica?</summary>
-            <p>Este sitio no ofrece diagnóstico, psicoterapia ni atención de crisis. Su alcance es educativo. Para atención clínica, acude a profesionales habilitados.</p>
-          </details>
-          <details>
-            <summary>Que puedo llevar a una sesion de claridad?</summary>
-            <p>Una decision, un patron repetido, una relacion confusa, dificultad con habitos, bloqueo de estudio o una narrativa personal que quieras ordenar. Se trabaja con preguntas, mapa del problema y pasos concretos.</p>
-          </details>
-          <details>
-            <summary>Los informes son diagnosticos?</summary>
-            <p>No. Son documentos psicoeducativos y orientativos. Ayudan a comprender patrones de apego, conducta o decision, pero no sustituyen una evaluacion psicologica formal.</p>
-          </details>
-          <details>
-            <summary>Puedo pedir contenido para estudiar psicologia?</summary>
-            <p>Si. Psyche Lab puede preparar guias, resumenes, mapas conceptuales, explicaciones de autores, ejercicios de repaso y materiales en PDF o audio.</p>
-          </details>
-          <details>
-            <summary>Revisan informes, test o documentos psicologicos?</summary>
-            <p>Si. Se puede revisar estructura, redaccion, coherencia, tablas, claridad de resultados y formato de devolucion. La aplicacion, interpretacion final, firma y responsabilidad profesional pertenecen al psicologo o institucion correspondiente.</p>
-          </details>
-          <details>
-            <summary>Que pasa si mi situacion es urgente?</summary>
-            <p>Si existe riesgo de dano, crisis intensa, ideacion suicida, violencia o emergencia, contacta servicios de emergencia locales o una linea de crisis de tu pais. Psyche Lab no es un servicio de urgencias.</p>
-          </details>
-        </div>
-      </section>
-
-      <section class="section audience-section">
-        <div class="section-heading">
-          <p class="eyebrow">Para quien</p>
-          <h2>Personas que quieren entenderse sin reducirse a una etiqueta.</h2>
-        </div>
-        <div class="audience-grid">
-          <article><span></span><p>Personas con decisiones importantes, saturacion mental o ciclos repetidos.</p></article>
-          <article><span></span><p>Quienes quieren comprender patrones de apego, vinculos, rupturas o dependencia emocional.</p></article>
-          <article><span></span><p>Estudiantes que necesitan psicologia explicada con profundidad y lenguaje claro.</p></article>
-          <article><span></span><p>Personas que desean crear estructura, habitos y sistemas cotidianos sostenibles.</p></article>
-        </div>
-      </section>
-
-      <section class="section limits-section" id="limites">
-        <div class="section-heading centered">
-          <p class="eyebrow">Limites profesionales</p>
-          <h2>Seriedad tambien es saber que no se ofrece.</h2>
-          <p>
-            Psyche Lab se presenta como psicoeducacion, analisis y claridad estrategica.
-            Si una situacion requiere atencion clinica, emergencia o tratamiento especializado,
-            se recomienda acudir a profesionales y servicios correspondientes.
-          </p>
-        </div>
-        <div class="limits-grid">
-          <article><span>01</span><p>No se ofrece diagnostico clinico, tratamiento medico, psicoterapia formal ni atencion de crisis.</p></article>
-          <article><span>02</span><p>Los informes son psicoeducativos y orientativos; no reemplazan evaluacion psicologica formal.</p></article>
-          <article><span>03</span><p>No se prometen resultados garantizados en relaciones, salud mental, habitos o decisiones.</p></article>
-          <article><span>04</span><p>No se firman informes por terceros, no se inventan resultados y no se aplican pruebas restringidas sin autorizacion profesional.</p></article>
-        </div>
-      </section>
-
-      <section class="contact-section" id="contacto">
-        <div class="contact-copy">
-          <p class="eyebrow">Contacto</p>
-          <h2>Cuentalo con orden. Psyche Lab prepara el mapa.</h2>
-          <p>
-            Elige el tipo de servicio, describe el tema y recibe una propuesta de trabajo
-            psicoeducativo con alcance claro.
-          </p>
-          <div class="contact-tags">
-            <span>Sesion</span><span>Informe</span><span>Test</span><span>Estudiantes</span><span>PDF</span>
-          </div>
-          <div class="direct-contact">
-            <a href="mailto:josuepug@gmail.com">josuepug@gmail.com</a>
-            <a href="https://wa.me/593987411592">WhatsApp: +593 98 741 1592</a>
-          </div>
-        </div>
-        <form class="quote-form" id="quote-form">
-          <label>Nombre <input name="name" required placeholder="Tu nombre" /></label>
-          <label>Contacto <input name="contact" required placeholder="Correo o WhatsApp" /></label>
-          <label>Servicio
-            <select name="service">
-              <option>Sesion de Claridad Psicologica</option>
-              <option>Mapa de Patrones Relacionales</option>
-              <option>Informe de Apego Aplicado</option>
-              <option>Plan de Estructura Interna</option>
-              <option>Guia o recurso digital</option>
-              <option>Contenido para estudiantes</option>
-              <option>Revision de informe psicologico</option>
-              <option>Revision y organizacion de test</option>
-              <option>Plantillas o protocolos profesionales</option>
-              <option>Diapositivas academicas</option>
-            </select>
-          </label>
-          <div class="form-row">
-            <label>Formato preferido
-              <select name="format">
-                <option>Sesion online</option>
-                <option>Informe PDF</option>
-                <option>Programa 7 dias</option>
-                <option>Programa 14 dias</option>
-                <option>Programa 30 dias</option>
-                <option>Documento comentado</option>
-                <option>Plantilla editable</option>
-                <option>Diapositivas</option>
-              </select>
-            </label>
-            <label>Urgencia <input name="urgency" placeholder="Normal / esta semana / fecha" /></label>
-          </div>
-          <label>Tema principal
-            <textarea name="message" rows="5" aria-describedby="contact-scope" placeholder="Indica el recurso o tema educativo. No incluyas datos clínicos ni documentos personales."></textarea>
-          </label>
-          <button class="primary-button" type="submit">Preparar solicitud</button>
-          <p class="form-note" id="contact-scope">Este formulario prepara un texto; no lo envía. No compartas historias clínicas, diagnósticos ni datos de terceros.</p>
-          <p class="form-note" id="form-note">La solicitud se copiara al portapapeles si el navegador lo permite.</p>
-        </form>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div>
-        <strong>Psyche Lab</strong>
-        <span>Psicoeducacion - Claridad - Apego - Habitos - Narrativa personal</span>
+    </section>
+    <section class="notice-strip"><strong>Alcance cuidado</strong><span>Este sitio no ofrece diagnóstico, psicoterapia ni atención de crisis. Su alcance es educativo. Para atención clínica, acude a profesionales habilitados.</span></section>
+    <section class="section services-section" id="servicios">
+      <div class="section-heading centered"><p class="eyebrow">Servicios</p><h2>Materiales para aprender, presentar y organizar.</h2><p>Definimos tema, formato, fuentes, revisiones y fecha antes de presupuestar. No se incluyen evaluaciones personales ni interpretación de pruebas.</p></div>
+      <div class="services-grid">
+        <article><span>Estudiantes</span><h3>Contenido para estudiantes</h3><p>Resumenes visuales y explicativos para estudiar autores, procesos y conceptos clave.</p><strong>PDF / diapositivas</strong></article>
+        <article><span>Diapositivas</span><h3>Diapositivas academicas</h3><p>Preparacion de exposiciones y guiones.</p><strong>Documento comentado</strong></article>
+        <article><span>Plantillas</span><h3>Plantilla editable</h3><p>Plantillas para organizar apuntes, lecturas, horarios y seguimiento de hábitos. Sin registros de pacientes.</p><strong>Formatos para PDF, Word, diapositiva o Notion.</strong></article>
       </div>
-      <a href="#inicio">Volver arriba</a>
-    </footer>
-
-    <a class="whatsapp-float" href="https://wa.me/593987411592?text=Hola%20Psyche%20Lab%2C%20quiero%20informacion%20sobre%20recursos%20educativos." aria-label="Escribir a Psyche Lab por WhatsApp">
-      <span>WhatsApp</span>
-      <strong>Solicitar info</strong>
-    </a>
-
-    <script src="translations.js?v=psyche-lab-20260702-services-v1"></script>
-    <script src="scope-copy.js?v=20261011"></script>
-    <script src="script.js?v=20261008-scope"></script>
-  </body>
+    </section>
+    <section class="section about-section" id="sobre-mi">
+      <div class="about-media"><div class="about-photo-placeholder" aria-hidden="true"><span>PL</span></div></div>
+      <div class="about-copy">
+        <p class="eyebrow">Quien esta detras</p><h2 translate="no">Edwin Josué Puglla Gangotena</h2>
+        <p>Responsable de Psyche Lab. Recursos educativos y organización de contenidos; este sitio no ofrece diagnóstico ni psicoterapia.</p>
+        <div class="about-credentials"><article><strong>Lenguaje claro</strong><span>Conceptos complejos traducidos a criterios, preguntas y acciones.</span></article><article><strong>Modalidad</strong><span>PDF / diapositivas</span></article></div>
+        <a class="primary-button" href="#contacto">Solicitar info</a>
+      </div>
+    </section>
+    <section class="section resources-section" id="recursos">
+      <div class="section-heading centered"><p class="eyebrow">Recursos educativos</p><h2>Temas para trabajar con recursos educativos.</h2><p>El material se acuerda por encargo. Esta lista describe temas y formatos, no un catálogo de descargas disponibles.</p></div>
+      <div class="resource-grid">
+        <article><h3>Psicologia para estudiantes</h3><p>Resumenes visuales y explicativos para estudiar autores, procesos y conceptos clave.</p></article>
+        <article><h3>Habitos y rutina</h3><p>Plantillas para organizar apuntes, lecturas, horarios y seguimiento de hábitos. Sin registros de pacientes.</p></article>
+        <article><h3>Diapositivas academicas</h3><p>Preparacion de exposiciones y guiones.</p></article>
+      </div>
+    </section>
+    <section class="section faq-section" id="faq">
+      <div class="section-heading centered"><p class="eyebrow">Preguntas frecuentes</p><h2>Transparencia antes de empezar.</h2></div>
+      <div class="faq-list">
+        <details open><summary>Psyche Lab ofrece terapia psicologica?</summary><p>Este sitio no ofrece diagnóstico, psicoterapia ni atención de crisis. Su alcance es educativo. Para atención clínica, acude a profesionales habilitados.</p></details>
+        <details><summary>Puedo pedir contenido para estudiar psicologia?</summary><p>Si. Psyche Lab puede preparar guias, resumenes, mapas conceptuales, explicaciones de autores, ejercicios de repaso y materiales en PDF o audio.</p></details>
+        <details><summary>¿Qué incluye cada encargo?</summary><p>Definimos tema, formato, fuentes, revisiones y fecha antes de presupuestar. No se incluyen evaluaciones personales ni interpretación de pruebas.</p></details>
+        <details><summary>¿Qué información puedo compartir?</summary><p>Indica el recurso o tema educativo. No incluyas datos clínicos ni documentos personales.</p></details>
+      </div>
+    </section>
+    <section class="contact-section" id="contacto">
+      <div class="contact-copy">
+        <p class="eyebrow">Contacto</p><h2>Solicitar info</h2><p>Definimos tema, formato, fuentes, revisiones y fecha antes de presupuestar. No se incluyen evaluaciones personales ni interpretación de pruebas.</p>
+        <div class="contact-tags"><span>Estudiantes</span><span>PDF</span><span>Diapositivas</span></div>
+        <div class="direct-contact"><a href="mailto:josuepug@gmail.com" translate="no">josuepug@gmail.com</a><a href="https://wa.me/593987411592" translate="no">WhatsApp: +593 98 741 1592</a></div>
+      </div>
+      <form class="quote-form" id="quote-form">
+        <label>Nombre <input name="name" required placeholder="Tu nombre" /></label>
+        <label>Contacto <input name="contact" required placeholder="Correo o WhatsApp" /></label>
+        <label>Servicio <select name="service"><option>Contenido para estudiantes</option><option>Guia o recurso digital</option><option>Diapositivas academicas</option><option>Plantilla editable</option></select></label>
+        <div class="form-row">
+          <label>Formato preferido <select name="format"><option>PDF</option><option>Documento comentado</option><option>Plantilla editable</option><option>Diapositivas</option></select></label>
+          <label>Fecha deseada <input name="urgency" type="date" /></label>
+        </div>
+        <label>Tema principal <textarea name="message" rows="5" aria-describedby="contact-scope" placeholder="Indica el recurso o tema educativo. No incluyas datos clínicos ni documentos personales."></textarea></label>
+        <button class="primary-button" type="submit">Preparar solicitud</button>
+        <p class="form-note" id="contact-scope">Este formulario prepara un texto; no lo envía. No compartas historias clínicas, diagnósticos ni datos de terceros.</p>
+        <p class="form-note" id="form-note" role="status">La solicitud se copiara al portapapeles si el navegador lo permite.</p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><div><strong translate="no">Psyche Lab</strong><span>Recursos educativos</span></div><a href="#inicio">Volver arriba</a></footer>
+  <a class="whatsapp-float" href="https://wa.me/593987411592?text=Hola%20Psyche%20Lab%2C%20quiero%20informacion%20sobre%20recursos%20educativos." aria-label="Escribir a Psyche Lab por WhatsApp"><span translate="no">WhatsApp</span><strong>Solicitar info</strong></a>
+  <script src="translations.js?v=psyche-lab-20260702-services-v1"></script>
+  <script src="scope-copy.js?v=20261013"></script>
+  <script src="script.js?v=20261013"></script>
+</body>
 </html>

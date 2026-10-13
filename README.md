@@ -1,5 +1,22 @@
 # Psyche Lab
 
+## Alcance vigente: 13 de octubre de 2026
+
+La web publica ofrece materiales educativos por encargo: guias de estudio,
+diapositivas y plantillas de organizacion. Se retiraron las ofertas de sesiones,
+orientacion psiquiatrica, evaluacion personal y revision de pruebas, asi como
+los enlaces a muestras antiguas. Los apartados historicos de este documento
+describen versiones anteriores, no servicios actualmente ofrecidos.
+
+No se acredita habilitacion clinica ni se solicita informacion de pacientes.
+Las imagenes editoriales no representan instalaciones propias.
+El formulario prepara texto para copiar y no envia datos.
+
+Verificacion: `node scripts/test-scope.cjs` con Playwright disponible.
+Comprueba 12 idiomas, cuatro anchos, cobertura del texto traducible,
+metadatos, anclas, avisos y ausencia de errores JavaScript.
+Estas comprobaciones no equivalen a revision por hablantes nativos.
+
 Sitio estatico para una marca de psicologia aplicada, salud mental, psicoeducacion, claridad personal, apego, habitos, servicios academicos y recursos profesionales.
 
 ## Archivos

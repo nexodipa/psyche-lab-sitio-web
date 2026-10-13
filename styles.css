@@ -35,6 +35,16 @@ body {
   background: var(--page);
   color: var(--ink);
   font-family: Inter, Avenir, "Segoe UI", Arial, sans-serif;
+  overflow-wrap: anywhere;
+}
+
+main article, .about-copy, .contact-copy, .quote-form, .form-row > label {
+  min-width: 0;
+}
+
+input, select, textarea {
+  max-width: 100%;
+  min-width: 0;
 }
 
 html[dir="rtl"] body {

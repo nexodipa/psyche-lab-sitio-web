@@ -62,13 +62,13 @@ const applyLanguage = (lang) => {
     });
   });
 
-  document.title = translate("Psyche Lab | Psicologia aplicada, apego y claridad personal", activeLang);
+  document.title = translate("Psyche Lab | Recursos educativos", activeLang);
   const description = document.querySelector('meta[name="description"]');
   if (description) {
     description.setAttribute(
       "content",
       translate(
-        "Psyche Lab ofrece psicoeducacion, claridad psicologica, analisis de patrones relacionales, recursos de apego, habitos y estructura interna.",
+        "Recursos educativos para comprender conceptos de psicología, organizar el estudio y explorar hábitos. No ofrecemos diagnóstico ni psicoterapia.",
         activeLang
       )
     );
@@ -82,10 +82,14 @@ window.applyPsycheLanguage = applyLanguage;
 if (menuButton && siteNav) {
   menuButton.addEventListener("click", () => {
     siteNav.classList.toggle("open");
+    menuButton.setAttribute("aria-expanded", String(siteNav.classList.contains("open")));
   });
 
   siteNav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => siteNav.classList.remove("open"));
+    link.addEventListener("click", () => {
+      siteNav.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+    });
   });
 }
 
@@ -110,7 +114,7 @@ if (quoteForm) {
       `${translate("Contacto", lang)}: ${data.get("contact") || ""}`,
       `${translate("Servicio", lang)}: ${data.get("service") || ""}`,
       `${translate("Formato preferido", lang)}: ${data.get("format") || ""}`,
-      `${translate("Urgencia", lang)}: ${data.get("urgency") || ""}`,
+      `${translate("Fecha deseada", lang)}: ${data.get("urgency") || ""}`,
       "",
       `${translate("Tema principal", lang)}:`,
       data.get("message") || "",
