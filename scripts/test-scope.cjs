@@ -70,6 +70,27 @@ const { chromium } = require('playwright');
       await page.selectOption('#language-select', 'en');
       await page.selectOption('#language-select', lang);
       assert.equal(await page.locator('html').getAttribute('lang'), lang);
+      await page.locator('[name="name"]').fill('QA');
+      await page.locator('[name="contact"]').fill('qa@example.com');
+      for (const fails of [false, true]) {
+        await page.evaluate(fails => {
+          Object.defineProperty(navigator, 'clipboard', { configurable: true, value: {
+            writeText: async text => {
+              if (fails) throw new Error('Clipboard unavailable');
+              window.copiedRequest = text;
+            }
+          }});
+        }, fails);
+        await page.locator('#quote-form button[type="submit"]').click();
+        const key = fails
+          ? 'Solicitud preparada. Copiala manualmente desde los campos antes de enviar.'
+          : 'Solicitud copiada. Puedes pegarla en WhatsApp o correo.';
+        for (const nextLang of ['es', 'en', lang]) {
+          await page.selectOption('#language-select', nextLang);
+          const expected = await page.evaluate(({ key, lang }) => lang === 'es' ? key : window.PSYCHE_TRANSLATIONS[lang][key], { key, lang: nextLang });
+          assert.equal(await page.locator('#form-note').innerText(), expected);
+        }
+      }
     }
     assert.deepEqual(errors, []);
     console.log('PASS: identity, scope and contact notices, 12 languages, desktop/mobile, no JS errors.');

@@ -13,6 +13,12 @@ const translatableAttributes = ["placeholder", "aria-label", "alt", "title", "co
 const excludedTags = new Set(["SCRIPT", "STYLE", "NOSCRIPT"]);
 const attributeMemoryKey = (attr) => `original${attr.replace(/[^a-z0-9]/gi, "")}`;
 
+const setTranslatedText = (element, key) => {
+  element.textContent = translate(key);
+  element.firstChild.originalText = key;
+  element.firstChild.originalTrimmed = key;
+};
+
 const collectTextNodes = (root = document.body) => {
   const nodeFilter = window.NodeFilter || { SHOW_TEXT: 4, FILTER_ACCEPT: 1, FILTER_REJECT: 2 };
   const walker = document.createTreeWalker(root, nodeFilter.SHOW_TEXT, {
@@ -122,9 +128,9 @@ if (quoteForm) {
 
     try {
       await navigator.clipboard.writeText(request);
-      formNote.textContent = translate("Solicitud copiada. Puedes pegarla en WhatsApp o correo.", lang);
+      setTranslatedText(formNote, "Solicitud copiada. Puedes pegarla en WhatsApp o correo.");
     } catch (error) {
-      formNote.textContent = translate("Solicitud preparada. Copiala manualmente desde los campos antes de enviar.", lang);
+      setTranslatedText(formNote, "Solicitud preparada. Copiala manualmente desde los campos antes de enviar.");
     }
   });
 }
