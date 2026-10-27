@@ -17,45 +17,25 @@ Comprueba 12 idiomas, cuatro anchos, cobertura del texto traducible,
 metadatos, anclas, avisos y ausencia de errores JavaScript.
 Estas comprobaciones no equivalen a revision por hablantes nativos.
 
-Sitio estatico para una marca de psicologia aplicada, salud mental, psicoeducacion, claridad personal, apego, habitos, servicios academicos y recursos profesionales.
+Sitio estatico de materiales educativos de psicologia: guias de estudio, resumenes,
+mapas conceptuales, diapositivas y plantillas de organizacion de habitos y estudio.
+
+## Lo que no es
+
+No ofrece diagnostico, psicoterapia, atencion de crisis, evaluacion personal ni
+interpretacion de pruebas. No acredita habilitacion clinica, no recibe historias
+clinicas ni datos de pacientes, y no publica muestras de informes ni de revision
+de pruebas. Las muestras PDF de versiones anteriores fueron retiradas del repositorio
+el 27 de octubre de 2026 (siguen en el historial de git).
 
 ## Archivos
 
 - `index.html`: estructura de la pagina.
 - `styles.css`: estilos responsive.
-- `script.js`: menu movil y formulario que prepara una solicitud copiable.
-- `translations.js`: selector y paquetes de idioma para ES, EN, DE, FR, PT, IT, RU, CS, ZH, JA, HE y AR.
-- `assets/hero-psyche-lab-medical-v2.png`: imagen principal con estilo medico/profesional.
-- `assets/consulta-psyche-lab.png`: imagen editorial para enfoque profesional.
-- `assets/articulos-psyche-lab.png`: imagen editorial para biblioteca de articulos.
-- `assets/pdf/psyche-lab-muestra-informe-psicoeducativo.pdf`: muestra descargable de informe psicoeducativo.
-- `assets/pdf/psyche-lab-muestra-revision-test.pdf`: muestra descargable de revision y organizacion de test.
+- `script.js`: menu movil y formulario que prepara una solicitud copiable (no envia datos).
+- `translations.js` y `scope-copy.js`: selector y paquetes de idioma para ES, EN, DE, FR, PT, IT, RU, CS, ZH, JA, HE y AR.
+- `assets/`: imagenes editoriales (no representan instalaciones propias).
 
 ## Abrir
 
-Abre `index.html` en el navegador o sube la carpeta completa a Netlify.
-
-## Posicionamiento
-
-Psyche Lab se presenta como psicoeducacion, analisis psicologico orientativo, claridad estrategica, recursos digitales, organizacion conductual y apoyo academico/profesional. No se presenta como terapia clinica online, diagnostico ni tratamiento medico.
-
-## Secciones profesionales
-
-- Servicios e informes.
-- Servicios profesionales y academicos para psicologos y estudiantes.
-- Revision de informes, organizacion de test, plantillas, protocolos y diapositivas.
-- Muestras PDF descargables.
-- Articulos y psicoeducacion.
-- Temas frecuentes de psicologia aplicada.
-- Programas de 7, 14 y 30 dias.
-- Recursos digitales.
-- Preguntas frecuentes.
-- Aviso de limites profesionales.
-- Boton flotante de WhatsApp.
-- Selector multilenguaje con soporte RTL para hebreo y arabe.
-
-Deployment refresh: 2026-06-30.
-
-Public verification refresh: 2026-06-30 language switcher fixed.
-
-Services refresh: 2026-07-02 professional services and PDF samples added.
+Abre `index.html` en el navegador o sube la carpeta completa a un hosting estatico.
